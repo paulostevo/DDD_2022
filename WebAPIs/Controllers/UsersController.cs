@@ -17,7 +17,7 @@ namespace WebAPIs.Controllers
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         public UsersController(UserManager<ApplicationUser> userManager,
-            SignInManager<ApplicationUser> signInManager)
+                               SignInManager<ApplicationUser> signInManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -99,9 +99,6 @@ namespace WebAPIs.Controllers
                 return Ok("Erro ao confirmar usuários");
 
         }
-
-
-
 
 
     }
